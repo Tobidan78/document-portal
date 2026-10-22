@@ -19,6 +19,15 @@
             background: #f5f7fb;
         }
 
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+        }
+
         header {
             background: white;
             padding: 22px 8%;
@@ -140,7 +149,12 @@
         </section>
     </main>
 
-    <footer>Document Portal · © 2026</footer>
+    <footer>
+        Document Portal · © 2026 ·
+        <a href="https://t.me/+18998689033" target="_blank" rel="noopener noreferrer">
+            Message us on Telegram
+        </a>
+    </footer>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {

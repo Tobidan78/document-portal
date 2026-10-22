@@ -139,6 +139,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-family: Arial, sans-serif;
         }
 
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+        }
+
         .container {
             max-width: 560px;
             margin: 30px auto;
