@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#3446e8">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <title>Customer Information | Document Portal</title>
     <style>
         * { box-sizing: border-box; }
@@ -222,7 +222,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         <?php endif; ?>
 
-        <form action="customer-form.php" method="POST">
+        <form action="/api/customer-form.php" method="POST">
             <label for="full_name">Full Name</label>
             <input
                 id="full_name"

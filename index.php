@@ -143,7 +143,7 @@
                 and complete the required steps.
             </p>
 
-            <a class="Button" href="customer-form.php">
+            <a class="button" href="/api/customer-form.php">
                 Download PDF
             </a>
         </section>
