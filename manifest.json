@@ -4,7 +4,7 @@
   "name": "Document Portal",
   "short_name": "Documents",
   "description": "Access and complete your authorized documents.",
-  "start_url": "/index.php",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f5f7fb",

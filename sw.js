@@ -3,7 +3,7 @@ const CACHE_NAME = "document-portal-v1";
 
 const APP_FILES = [
   "/",
-  "/index.php",
+  "/index.html",
   "/manifest.json",
   "/images/image.png",
   "/icons/icon-192.png",
@@ -54,7 +54,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).catch(async () => {
         return (
-          await caches.match("/index.php")
+          await caches.match("/")
         ) || Response.error();
       })
     );
